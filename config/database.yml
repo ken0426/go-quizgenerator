@@ -51,5 +51,6 @@ test:
 production:
   <<: *default
   database: go_quizgenerator_production
-  username: go_quizgenerator
-  password: <%= ENV['GO_QUIZGENERATOR_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
