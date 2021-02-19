@@ -1,24 +1,35 @@
-# README
+# アプリ名：GOクイズ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## このアプリでできること
+- ポケモンGOで必要な知識をゲーム感覚で学ぶことができる
 
-Things you may want to cover:
+## 本番環境
+- https://go-quizgenerator.kento-portfolio.com
 
-* Ruby version
+## このアプリを開発した意図
+- ポケモンをしていて楽しいけど、タイプ相性がなかなか覚えレない人に向けて開発
+- インターネット上に既にポケモンのクイズができるサービスはあるが、更に深掘りし、わかりやすく開発を行った
+- ポケモンを始める新米の方にも利用できるように考えて開発を行った
+- 上級者の人にも息抜きにこのサービスを利用してもらい、更に腕を磨いていただくために作った
 
-* System dependencies
+## 工夫したポイント
+- このアプリにアクセスしてから全て非可動通信で操作を行う為、オフライン環境でも遊ぶことができる
+- ご高齢の方にも遊んでもらえるように、字の大きさにも工夫をし、なるべく大きく設定をした
+- ポケモンGOのデザインによせた
 
-* Configuration
+このアプリで使用した言語
+- HTML
+- CSS
+- JavaScript
+- Ruby
+- Ruby on Rails
+- git
+- GitHub
 
-* Database creation
+## 今後実装したい機能
+- 現在アプリは文字だけで構成されている為、画像を配置するなどして更にアプリが使いやすくしたい
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## アピールポイント
+- 今回は全ての動作を非可動通信で行っていることに注目して欲しい。
+- AWSを利用し、自身のポートフォリオサイトからサブドメインを取得した。
+- サイトをSSL化し、セキュリティの強化も行った。
