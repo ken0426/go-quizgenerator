@@ -43,10 +43,11 @@ html{
 
   body{
     // background-color: rgb(0, 255, 157);
-    background-image: url(https://www.pokemon.jp/special/ouchipokemon/img/wallpaper/go/pokemongo_02.jpg);
+    background-image: url(https://images.unsplash.com/photo-1471115853179-bb1d604434e0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1559&q=80);
     background-size: cover;
     height: 100vh;
     position: relative;
+    outline: none
   }
 
   .box{
@@ -63,40 +64,101 @@ html{
     border: #046A20 solid 1px;
   }
 
+  .contents1{
+    width: 100%;
+    height: 100%;
+  }
+
+  .contents2{
+    width: 100%;
+    height: 100%;
+  }
+
+  .contents3{
+    width: 100%;
+    height: 100%;
+  }
+
   .box p{
     text-align: center;
-    font-size: 65px;
-    margin: 70px 0 50px 0;
+    font-size: 70px;
+    margin: 0px 0 70px 0;
+    padding-top: 70px;
     color: #149519;
+    position: relative;
+  }
+
+  .scroll{
+    width: 100%;
   }
 
   .rank{
     display: block;
     margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 20%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    width: 25%;
     height: 15%;
     font-size: 30px;
     background-color: white;
     border: #046A20 solid 1px;
-    border-radius: 30px;
+    border-radius: 40px;
     cursor: pointer;
     color: #149519;
+    box-shadow: 0 0 8px gray;
+  }
+
+  .type-box{
+    width: 100%;
+    display: flex;
+  }
+
+  .type{
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 45%;
+    height: 15%;
+    font-size: 30px;
+    background-color: white;
+    border: #046A20 solid 1px;
+    border-radius: 40px;
+    cursor: pointer;
+    color: #149519;
+    justify-content: space-around;
+    box-shadow: 0 0 8px gray;
+  }
+
+  .top-page{
+    position: absolute;
+    left: 0;
+    bottom: 4%;
+    height: 10%;
+    width: 10%;
+    font-size: 20px;
+    background-color: white;
+    border-top: #046A20 solid 1px;
+    border-right: #046A20 solid 1px;
+    border-bottom: #046A20 solid 1px;
+    border-left: 0px;
+    cursor: pointer;
+    color: #149519;
+    box-shadow: 0 0 8px gray;
   }
 
   // ここから問題
   .container{
     width: 100%;
-    height: 100%;
+    height: 90%;
+    padding-top: 30px;
   }
-  
+
   .question{
     width: 95%;
     height: 45%;
     background-color: white;
     margin: 0 auto;
-    margin-top: 30px;
     border: solid 1px #046A20;
     font-size: 30px;
     text-align: center;
@@ -118,4 +180,95 @@ html{
     font-size: 32px;
     box-shadow: 0 0 8px gray;
     cursor: pointer;
+  }
+
+  // iPhone12ProMaxまでのサイズ
+  @media screen and (max-width: 428px){
+    .box{
+      width: 96%;
+      height: 95%;
+    }
+    .box p{
+      font-size: 28px;
+    }
+    .rank{
+      width: 85%;
+    }
+    .type-box{
+      display: block;
+    }
+    .type{
+      width: 87%;
+    }
+    .scroll{
+      height: 50%;
+      overflow: auto;
+    }
+    .top-page{
+      width: 30%;
+    }
+    .question{
+      height: 37%;
+      font-size: 14px;
+    }
+    .btn-primary{
+      width: 70%;
+    }
+  }
+
+  
+
+  @media screen and (min-width: 700px) and (max-width: 1024px){
+    .box{
+      width: 96%;
+      height: 95%;
+    }
+    .box p{
+      font-size: 55px;
+    }
+    .rank{
+      width: 65%;
+    }
+    .type-box{
+      display: block;
+    }
+    .type{
+      width: 70%;
+    }
+    .scroll{
+      height: 60%;
+      overflow: auto;
+    }
+    .top-page{
+      width: 13%;
+    }
+    .btn-primary{
+      width: 55%;
+    }
+  }
+
+  @media screen and (min-width: 1025px){
+    .rank:hover{
+      background-color: #7fc993;
+      border: none;
+      color: white;
+      }
+
+    .type:hover{
+      background-color: #7fc993;
+      border: none;
+      color: white;
+      }
+    
+    .top-page:hover{
+      background-color: #7fc993;
+      border: none;
+      color: white;
+      }
+
+    .btn-primary:hover{
+      background-color: #7fc993;
+      border: none;
+      color: white;
+      }
   }

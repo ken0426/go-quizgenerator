@@ -1,13 +1,75 @@
 <div class="box">
-  <%# <p>ポケモンGO クイズ</p>
-  <button class="rank">初級</button>
-  <button class="rank">中級</button>
-  <button class="rank">上級</button> %>
+  <div id="contents1" class="contents1">
+    <p>ポケモンGO クイズゲーム</p>
+    <button id="rank1" class="rank">初級</button>
+    <button id="rank2" class="rank">中級</button>
+    <button id="rank3" class="rank">上級</button>
+  </div>
+
+  <%# 初級の選択をする画面 %>
+  <div id="contents2" class="contents2">
+    <p>基礎知識</p>
+    <div class="scroll">
+      <div class="type-box">
+        <button id="type1" class="type">タイプ相性<br>（単体①）</button>
+        <button id="type2" class="type">タイプ相性<br>（単体②）</button>
+      </div>
+      <div class="type-box">
+        <button id="type3" class="type">タイプ相性<br>（複合①）</button>
+        <button id="type4" class="type">タイプ相性<br>（複合②）</button>
+      </div>
+    </div>
+    <button id="back" class="top-page">◀︎ 戻る</button>
+  </div>
+  <%# ここまで初級の選択をする画面 %>
+
+   <%# 中級の選択をする画面 %>
+   <div id="contents4" class="contents2">
+    <p>準備中</p>
+    <div class="scroll">
+    <div class="type-box">
+      <button  class="type">準備中</button>
+      <button  class="type">準備中</button>
+    </div>
+    <div class="type-box">
+      <button  class="type">準備中</button>
+      <button  class="type">準備中</button>
+    </div>
+    <div class="type-box">
+      <button  class="type">準備中</button>
+      <button  class="type">準備中</button>
+    </div>
+    </div>
+    <button id="back2" class="top-page">◀︎ 戻る</button>
+  </div>
+   <%# 中級の選択をする画面 %>
+
+   <%# 上級の選択をする画面 %>
+   <div id="contents5" class="contents2">
+    <p>準備中</p>
+    <div class="scroll">
+    <div class="type-box">
+      <button  class="type">準備中</button>
+      <button  class="type">準備中</button>
+    </div>
+    <div class="type-box">
+      <button  class="type">準備中</button>
+      <button  class="type">準備中</button>
+    </div>
+    <div class="type-box">
+      <button  class="type">準備中</button>
+      <button  class="type">準備中</button>
+    </div>
+    </div>
+    <button id="back3" class="top-page">◀︎ 戻る</button>
+  </div>
+   <%# 上級の選択をする画面 %>
 
 
-<%# ここから初級の問題 %>
+<%# ここから問題 %>
+<div id="contents3" class="contents3">
   <div class="container">
-    <div class="question">
+    <div id="js-question" class="question">
       A simple primary alert—check it out!
     </div>
 
@@ -17,6 +79,6 @@
       <button class="btn-primary">Primary</button>
       <button class="btn-primary">Primary</button>
     </div>
-    </div>
-<%# ここまで初級の問題 %>
+  </div>
+<%# ここまで問題 %>
 </div>
